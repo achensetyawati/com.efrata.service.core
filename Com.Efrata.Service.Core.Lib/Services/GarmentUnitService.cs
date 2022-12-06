@@ -43,7 +43,7 @@ namespace Com.Efrata.Service.Core.Lib.Services
 			{
 				"Id", "Code", "Division", "Name"
 			};
-			IEnumerable<string> unit = new string[] { "AG1", "AG2" };
+			IEnumerable<string> unit = new string[] { "EFR" };
 			Query = from a in Query
 					where (unit.Contains(a.Code))
 					select new Unit {
@@ -107,7 +107,7 @@ namespace Com.Efrata.Service.Core.Lib.Services
 			{
 				"Id", "Code", "Division", "Name"
 			};
-			IEnumerable<string> unit = new string[] { "AG1", "AG2", "SMP1" };
+			IEnumerable<string> unit = new string[] { "EFRATA", "SMP1" };
 			Query = from a in Query
 					where (unit.Contains(a.Code))
 					select new Unit
